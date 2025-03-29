@@ -22,7 +22,7 @@ O cofre Arduino com senha funciona da seguinte maneira:
 
 ## Espaço para Foto
 
-![Foto do Projeto no TinkerCad](URL_DA_SUA_FOTO_AQUI)
+![Foto do Projeto no TinkerCad](https://github.com/eduardosdl/cofre-arduino/blob/main/digrama-tinkercad.png)
 
 ## Como Usar
 
