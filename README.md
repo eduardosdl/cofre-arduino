@@ -17,10 +17,12 @@ O cofre Arduino com senha funciona da seguinte maneira:
 - **Inserção de Senha**: O usuário pode inserir uma senha de 4 dígitos utilizando o teclado matricial.
 - **Verificação de Senha**: Pressionar a tecla 'C' verifica se a senha inserida está correta.
 - **Alteração de Senha**: Quando o cofre está aberto, o usuário pode alterar a senha pressionando a tecla 'A'.
+- **Limpeza de Senha**: Se quiser limpar uma senha que estiver escrevendo tecle 'D' e ela será limpa.
 - **Fechamento do Cofre**: Pressionar a tecla 'B' fecha o cofre quando ele está aberto.
-- **Alarme**: Um alarme é acionado se o sensor de força detectar uma tentativa de arrombamento ou se mais de três tentativas de senha incorretas forem feitas.
+- **Alarme**: Um alarme é acionado se o sensor de força detectar uma tentativa de arrombamento, se a temperatura estiver muito elevada ou se mais de três tentativas de senha incorretas forem feitas.
+- **Desativar alarme**: Após o alarme acionado so será desativado caso o cofre seja aberta inserindo a senha correta.
 
-## Espaço para Foto
+## Diagrama do Projeto no TinkerCad
 
 ![Foto do Projeto no TinkerCad](https://github.com/eduardosdl/cofre-arduino/blob/main/digrama-tinkercad.png)
 
@@ -30,13 +32,16 @@ Para utilizar o cofre Arduino com senha, siga estas instruções:
 
 1. **Inserir Senha**: Utilize o teclado para inserir uma senha de 4 dígitos.
 2. **Verificar Senha**: Pressione a tecla 'C' para verificar se a senha está correta. Se estiver correta, o servo motor destravará o cofre.
-3. **Alterar Senha**: Quando o cofre estiver aberto, pressione a tecla 'A' para alterar a senha.
+3. **Alterar Senha**: Quando o cofre estiver aberto, insira uma nova senha e tecle 'A' para alterar a senha.
 4. **Fechar Cofre**: Pressione a tecla 'B' para fechar o cofre.
-5. **Ativar Alarme**: O alarme será ativado automaticamente se uma tentativa de arrombamento for detectada ou se mais de três tentativas de senha incorretas forem feitas.
+5. **Ativar Alarme**: O alarme será ativado automaticamente se uma tentativa de arrombamento for detectada (por meio de força bruta ou maçarico) ou se mais de três tentativas de senha incorretas forem feitas.
 
-## Contribuições
-
-Sinta-se à vontade para abrir issues e enviar pull requests para melhorias neste projeto.
+## Alunos
+- Eduardo Silva
+- José Ailton
+- Natan Marques
+- Ricardo Lyra
+- Vinicius Ederman
 
 ## Licença
 
