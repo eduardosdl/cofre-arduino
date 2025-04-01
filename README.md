@@ -2,6 +2,10 @@
 
 Este projeto Arduino implementa um cofre seguro controlado por senha utilizando um teclado matricial, um servo motor para travar/destravar o cofre, um sensor de força, um piezo para alarme e um display LCD para exibir informações.
 
+[Link para TinkerCad](https://www.tinkercad.com/things/0p3mrjbs5UO-cofre-com-senha?sharecode=rLfX9kWb0t9YXx2pJH0bBSepf4ViGSyp4oy5MooGddo)
+[Link para documentação](https://docs.google.com/document/d/1byeflbOtzF8z7a4TjqRabQ_38kHSlvwus4INAkZiFqA/edit?usp=drive_link)
+[Link para vídeo de demonstração](https://drive.google.com/file/d/1LDDpB9sc4YgEg4EgSMm0ofxfSIG0DPZc/view?usp=sharing)
+
 ## Descrição do Projeto
 
 O cofre Arduino com senha funciona da seguinte maneira:
@@ -25,6 +29,37 @@ O cofre Arduino com senha funciona da seguinte maneira:
 ## Diagrama do Projeto no TinkerCad
 
 ![Foto do Projeto no TinkerCad](https://github.com/eduardosdl/cofre-arduino/blob/main/digrama-tinkercad.png)
+
+## Passo a Passo para Criação da Lógica:
+- Inicialização dos Componentes:
+  - Configurar o teclado matricial.
+  - Configurar o servo motor.
+  - Configurar o display LCD.
+  - Configurar o sensor de força.
+  - Configurar o piezo.
+  - Inserção de Senha:
+
+- Capturar a entrada do teclado matricial.
+  - Exibir a senha no display LCD.
+
+- Verificação de Senha:
+  - Comparar a senha inserida com a senha armazenada.
+  - Se a senha estiver correta, acionar o servo motor para destravar o cofre.
+
+- Alteração de Senha:
+  - Quando o cofre estiver aberto, permitir a inserção de uma nova senha.
+  - Armazenar a nova senha.
+
+- Fechamento do Cofre:
+  - Acionar o servo motor para travar o cofre.
+
+- Monitoramento do Sensor de Força:
+  - Continuamente monitorar o sensor de força.
+  - Acionar o alarme se uma tentativa de arrombamento for detectada.
+
+- Alarme:
+  - Emitir um som usando o piezo em caso de tentativas de senha incorretas ou detecção de arrombamento.
+  - Desativar o alarme quando a senha correta for inserida.
 
 ## Como Usar
 
